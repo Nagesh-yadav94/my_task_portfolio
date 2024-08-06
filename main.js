@@ -20,26 +20,6 @@ list_items.forEach((item) => {
     });
 });
 
-
-/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
-function headerShadow() {
-    const navHeader = document.getElementById("header");
-
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-
-        navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)";
-        navHeader.style.height = "80px";
-
-    } else {
-        navHeader.style.boxShadow = "none";
-        navHeader.style.height = "50px";
-    }
-}
-window.onscroll = function() {
-    headerShadow();
-};
-
-
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
     strings: ["Web Developer", "Frontend Developer", "Backend Developer"],
